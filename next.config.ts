@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   basePath: "/AbrorilHuda.github.io", // Ganti dengan nama repository kamu
   assetPrefix: "/AbrorilHuda.github.io/", // Ganti dengan nama repository kamu
   eslint: {
