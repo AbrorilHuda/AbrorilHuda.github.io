@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
-
+const exportMode =
+  process.env.EXPORT_MODE === undefined || process.env.EXPORT_MODE !== "false";
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/AbrorilHuda.github.io", // Ganti dengan nama repository kamu
-  assetPrefix: "/AbrorilHuda.github.io/", // Ganti dengan nama repository kamu
+  output: exportMode ? "export" : undefined,
+  basePath: exportMode ? "/AbrorilHuda.github.io" : "",
+  assetPrefix: exportMode ? "/AbrorilHuda.github.io/" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },

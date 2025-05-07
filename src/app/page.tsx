@@ -34,10 +34,10 @@ export default function Home() {
           colors={["#111", "#eaeaea", "#111", "#eaeaea", "#111"]}
           animationSpeed={3}
           showBorder={false}
-          className="custom-class"
+          className="custom-class hover:bg-violet-200 p-2"
         >
           <Link
-            href="https://gthub.com/abrorilhuda"
+            href="https://github.com/abrorilhuda"
             className="hover:text-violet-500"
           >
             GitHub
